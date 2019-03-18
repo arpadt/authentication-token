@@ -1,8 +1,8 @@
 class AuthorizationError extends Error {
-  constructor(message, httpStatusCode) {
+  constructor(message) {
     super(message)
     this.name = 'AuthorizationError'
-    this.httpStatusCode = httpStatusCode
+    this.httpStatusCode = 401
   }
 }
 
